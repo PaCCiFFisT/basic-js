@@ -7,7 +7,6 @@ module.exports = function createDreamTeam(members) {
   sortMem.forEach((element, i) => {
     if (typeof element != 'string') { return false };
     teamName = teamName + element.charAt(0);
-    console.log(typeof teamName)
   })
   let teamNameArr = teamName.toUpperCase().split('');
   teamNameArr.sort().join('');

@@ -2,10 +2,8 @@
 module.exports = function createDreamTeam(members) {
   let sortMem = [],
     teamName = '';
-  console.log(typeof members)
   if (typeof members != 'object' || members === null || Array.isArray(members) === false) { return false };
   sortMem = members.filter(element => typeof element === 'string').map(element => element.trim());
-  console.log(sortMem)
   sortMem.forEach((element, i) => {
     if (typeof element != 'string') { return false };
     teamName = teamName + element.charAt(0);
